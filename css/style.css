@@ -1,0 +1,98 @@
+.btn-primary{
+	background-color: transparent;
+	border-color: #333;
+	color: #333;
+	transition: color, background-color, 0.2s ease-in-out;
+}
+
+.btn-primary:hover{
+	background-color: #333;
+	border-color: #333;
+	color: white;
+}
+
+.product{
+	position: relative;
+	overflow: hidden;
+	height: auto;
+}
+
+.product h3, .product p{
+	position: absolute;
+	bottom: 25px;
+	left: 15px;
+	width: 100%;
+	color: white;
+}
+
+.product p{
+	bottom: 0px;
+	font-size: 1.2em;
+}
+
+.home .product h3{
+	bottom: 0px;
+}
+
+.product:hover .mask{
+	background-color: rgba(0,0,0, 0.65);
+}
+
+.product img{
+	width: 100%;
+}
+
+.mask{
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0px;
+	left: 15px;
+	right: 15px;
+	transition: opacity, 0.3s ease-in-out;
+}
+
+.catalogo .product .mask .btn-primary{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background-color: transparent;
+	border-color: white;
+	color: white;	
+}
+
+.catalogo .product .mask .btn-primary span{
+	font-size: 1.5em;
+	font-weight: lighter;
+	line-height: 0em;
+}
+
+.catalogo .product .mask .btn-primary:hover{
+	background-color: white;
+	color: #333;	
+}
+
+.carrito .badge{
+	font-weight: lighter;
+}
+
+.carrito .total{
+	margin-right: 10px; 
+}
+
+.carrito .total:before, .product .price:before, .badge:before{
+	content: '$';
+}
+
+.carrito input[type=text]{
+	border: none;
+	padding: 0;
+}
+
+.resultado{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.name{
+	color:black;
+}

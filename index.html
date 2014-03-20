@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Mi tiendita</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- Fav and touch icons -->
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="home">
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12">
+			<img alt="140x140" src="img/Logo.jpg" class="center-block" width="150px" />
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">Compre los mejores paquetes al mejor precio</a>
+				</div>
+				
+				<div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="catalogo.html">Catalogo</a>
+						</li>
+						<li>
+							<a href="perfil.php">Perfil</a>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+			<div class="row clearfix">
+				<div class="col-sm-4 product">
+					<img class="img-responsive" alt="140x140" src="img/Viafara.png" />
+					<a href="catalogo.html" class="">
+						<div class="mask">
+							<h3>Jhon Eduis</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 product">
+					<img class="img-responsive" alt="140x140" src="img/Mondragon.png" />
+					<a href="catalogo.html" class="">
+						<div class="mask">
+							<h3>Faryd Camilo</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4 product">
+					<img class="img-responsive" alt="140x140" src="img/Casierra.png" />
+					<a href="catalogo.html" class="">
+						<div class="mask">
+							<h3>Casierra</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row clearfix carrito">
+				<div class="col-sm-12">
+					<h1>Carrito</h1>
+					<br>
+				</div>
+				<div class="col-md-4">
+					<form action="saveToCart.php" method="POST" id="save-cart" name="cart">
+						<ul class="list-group">
+						</ul>
+					</form>
+				</div>
+				<div class="col-md-4" class="comprar">
+					<h4 class="text-center">
+						<b>Total:</b> <span class="total"></span> 
+					</h4>
+					<p class="text-center">
+						<a class="btn btn-primary btn-large" id="comprar" href="#">Comprar</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="row clearfix">
+		<div class="col-md-12">
+			<br>
+			<p class="text-center">
+				Desarrollado por Juan David Flórez.
+			</p>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
